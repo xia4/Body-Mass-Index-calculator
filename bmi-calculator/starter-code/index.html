@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./assets/fonts/static/Inter-SemiBold.ttf">
   <link rel="stylesheet" href="./style.css">
+  <script src="./index.js"></script>
   <title>Frontend Mentor | Body Mass Index Calculator</title>
 </head>
 <body>
@@ -30,40 +31,53 @@
           <div class="right_inner">
             <h2>Enter your details below</h2>
             <div class="check_box">
-              <div class="metric bmi_check">
-                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
-                  <circle cx="15.5" cy="15.5" r="15.5" fill="#345FF6" fill-opacity="0.15"/>
-                  <circle cx="15.5" cy="15.5" r="7.5" fill="#345FF6"/>
-                </svg>
-                Metric
-              </div>
-              <div class="imperial bmi_check">
-                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
-                  <circle cx="15.5" cy="15.5" r="15" fill="white" stroke="#D8E2E7"/>
-                </svg>
-                Imperial
+                  <label for="met">
+                    <input type="radio" name="bmi" id="met" checked onclick="checkbox()">
+                    Metric
+                  </label>
+                  <label for="imp">
+                    <input type="radio" name="bmi" id="imp" onclick="checkbox()">
+                    Imperial
+                  </label>
+            </div>
+            <div class="below_box" id="1">
+              <div class="below_inner">
+                <div class="infor">
+                  <h3>Height</h3>
+                  <div class="below_input">
+                    <input type="text" class="infor_input" placeholder="0" id="height">
+                    <span>cm</span>
+                  </div>
+                </div>
+                <div class="infor">
+                  <h3>Weight</h3>
+                  <div class="below_input">
+                    <input type="text" class="infor_input" placeholder="0" id="weight">
+                    <span>kg</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="below_box">
+            <div class="below_box" id="2" style="display: none;">
               <div class="infor">
                 <h3>Height</h3>
-                <div class="infor_input">
-                  <span>185</span>
-                  <span>cm</span>
+                <div class="input_flex">
+                  <input type="text" class="infor_input" placeholder="0" value="5">
+                  <input type="text" class="infor_input" placeholder="0" value="11">
                 </div>
               </div>
               <div class="infor">
                 <h3>Weight</h3>
-                <div class="infor_input">
-                  <span>80</span>
-                  <span>kg</span>
+                <div class="input_flex">
+                  <input type="text" class="infor_input" placeholder="0" value="11">
+                  <input type="text" class="infor_input" placeholder="0" value="4">
                 </div>
               </div>
             </div>
             <div class="bmi_box">
               <div class="bmi_txt">
                 <p>Your BMI is...</p>
-                <p>23.4</p>
+                <div id="result"></div>
               </div>
               <div class="bmi_tit">
                 <p>Your BMI suggests you’re a healthy weight. Your ideal weight is between 63.3kgs - 85.2kgs.</p>
@@ -73,12 +87,12 @@
         </div>
       </div>
     </section>
+
     <section>
       <div class="second_inner">
         
       </div>
     </section>
   </main>
-  
 </body>
 </html>
