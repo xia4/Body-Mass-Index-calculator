@@ -128,6 +128,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+main {
+  width: 1440px;
+  margin: 0 auto;
+}
 .inner {
   width: 1276px;
   position: relative;
@@ -199,23 +203,32 @@ table {
   gap: 24px;
   align-self: stretch;
 }
-.right_box .right_inner .check_box .bmi_check {
+.right_box .right_inner .check_box label {
   display: flex;
   align-items: center;
-  gap: 18px;
-  flex: 1 0 0;
-  color: #253347;
-  font-family: Inter;
   font-size: 16px;
-  font-style: normal;
+  font-family: 'Inter';
   font-weight: 600;
-  line-height: 150%; /* 24px */
+  color: #253347;
+  width: 238px;
+}
+.right_box .right_inner .check_box label input[type="radio"] {
+  width: 31px;
+  height: 31px;
+  margin-right: 18px;
+  border: 1px solid #d8e2e7;
+}
+.right_box .right_inner .below_box:nth-child(1) {
+  background-color: #253347;
 }
 .right_box .right_inner .below_box .below_inner {
   display: flex;
   align-items: flex-start;
   gap: 24px;
   align-self: stretch;
+}
+.right_box .right_inner .mb-24 {
+  margin-bottom: 24px;
 }
 .right_box .right_inner .below_box .infor {
   display: flex;
@@ -266,30 +279,36 @@ table {
 
 .right_box .right_inner .bmi_box {
   display: flex;
+  flex-direction: column;
   padding: 32px;
   justify-content: center;
-  align-items: center;
-  gap: 24px;
+  gap: 16px;
   align-self: stretch;
   border-radius: 30px 250px 250px 30px;
   background: linear-gradient(90deg, #345ff6 0%, #587dff 100%);
+}
+.right_box .right_inner .bmi_box.active {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .right_box .right_inner .bmi_box .bmi_txt {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 8px;
-  flex: 1 0 0;
 }
 .right_box .right_inner .bmi_box .bmi_txt p:first-child {
   align-self: stretch;
   color: #fff;
   font-family: "Inter";
-  font-size: 16px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
+}
+.right_box .right_inner .bmi_box.active .bmi_txt p:first-child {
+  font-size: 16px;
 }
 .right_box .right_inner .bmi_box .bmi_txt > div {
   color: #fff;
@@ -299,7 +318,7 @@ table {
   line-height: 110%;
   letter-spacing: -3px;
 }
-.right_box .right_inner .bmi_box .bmi_tit {
+.right_box .right_inner .bmi_box.active .bmi_tit {
   width: 206px;
 }
 .right_box .right_inner .bmi_box .bmi_tit p {
@@ -314,4 +333,66 @@ table {
   color: #fff;
   font-size: 14px;
   font-weight: 700;
+}
+.second_inner {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+.second_inner .left_wrap > img {
+  width: 564px;
+}
+.second_inner .right_wrap > img {
+  position: relative;
+  left: 340px;
+  bottom: 22px;
+}
+.second_inner .right_wrap .right_txt {
+  width: 465px;
+}
+.second_inner .right_wrap .right_txt h2 {
+  font-size: 48px;
+  font-family: 'Inter';
+  font-weight: 600;
+  color: #253347;
+  margin-bottom: 35px;
+  letter-spacing: -2px;
+}
+.second_inner .right_wrap .right_txt p {
+  font-size: 16px;
+  font-family: 'Inter';
+  font-weight: 400;
+  line-height: 24px;
+  color: #5e6e85;
+}
+.third_inner {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 35px;
+  background: linear-gradient(290deg, #D6E6FE 0%, rgba(214, 242, 254, 0.45) 0, rgba(214, 252, 254, 0.00) 100%);
+  margin-top: 96px;
+  margin-bottom: 120px;
+  padding: 72px 116px;
+}
+.third_inner .infor_box {
+  width: 365px;
+}
+.third_inner .infor_box h2 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Inter';
+  color: #253347;
+  letter-spacing: -1px;
+  margin: 45px 0 24px 0;
+}
+.third_inner .infor_box p {
+  width: 365px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: 'Inter';
+  color: #5e6e85;
 }
