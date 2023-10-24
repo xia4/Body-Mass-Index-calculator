@@ -257,6 +257,9 @@ main {
   display: flex;
   align-items: center;
 }
+/* .right_box .right_inner .below_box .infor .below_input:hover {
+  border: 1px solid #345ff6;
+} */
 .right_box .right_inner .below_box .infor .below_input > span {
   color: #345ff6;
   font-size: 24px;
@@ -396,3 +399,99 @@ main {
   font-family: 'Inter';
   color: #5e6e85;
 }
+.fourth_inner {
+  width: 1160px;
+  margin: 0 auto;
+}
+.fourth_inner .sec:first-child {
+  justify-content: space-between;
+}
+.fourth_inner .sec:nth-child(2) {
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+.fourth_inner .sec:nth-child(3) {
+  justify-content: center;
+}
+.fourth_inner .sec {
+  display: flex;
+  gap: 32px;
+}
+.fourth_inner .sec.mb-32 {
+  margin-bottom: 32px;
+}
+.fourth_inner .sec .limitation {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 564px;
+}
+.fourth_inner .sec .limitation h2 {
+  font-family: 'Inter';
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 53px;
+  letter-spacing: -2px;
+  color: #253347;
+}
+.fourth_inner .sec .limitation p {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #5e6e85;
+}
+.fourth_inner .sec .limit_box {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 301px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+}
+.fourth_inner .sec .limit_box.mr-99 {
+  margin-right: 99px;
+}
+.fourth_inner .sec .limit_box .title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.fourth_inner .sec .limit_box .title span {
+  font-family: 'Inter';
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: #253347;
+}
+.fourth_inner .sec .limit_box .title p {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #5e6e85;
+}
+.fourth_inner .sec .limit_box .content {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #5e6e85;
+}
+section:last-child {
+  margin-bottom: 120px;
+}
+@media (max-width:768px){
+  main {
+    width: auto;
+  }
+  .inner {
+    width: auto;
+  }
+  .inner .left_box {
+    width: auto;
+    height: auto;
+  }
+} 
