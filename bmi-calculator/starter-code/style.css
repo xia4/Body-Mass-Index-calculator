@@ -487,12 +487,18 @@ main {
     margin: 0;
   }
   .inner .left_box .left_inner img {
-    width: 64px;
+    width: 40px;
     margin-bottom: 40px;
   }
   .inner .left_box .left_inner .tit_box {
     width: 686px;
     text-align: center;
+    align-items: center;
+  }
+  .inner .left_box .left_inner .tit_box h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+    width: 350px;
   }
   .inner .right_box {
     position: initial;
@@ -566,5 +572,83 @@ main {
   }
 } 
 @media (max-width:375px) {
-  
+  .inner .left_box .left_inner {
+    padding: 24px 32px 48px;
+  }
+  .inner .left_box .left_inner img {
+    margin-bottom: 24px;
+  }
+  .inner .left_box .left_inner .tit_box {
+    width: 327px;
+    gap: 24px;
+  }
+  .inner .left_box .left_inner .tit_box h1 {
+    width: auto;
+  }
+  .inner .right_box {
+    width: 328px;
+  }
+  .right_box .right_inner {
+    gap: 24px;
+    padding: 24px;
+  }
+  .right_box .right_inner .below_box .below_inner {
+    flex-direction: column;
+  }
+  .right_box .right_inner .bmi_box {
+    border-radius: 16px;
+    gap: 24px;
+  }
+  .right_box .right_inner .bmi_box.active {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .right_box .right_inner .bmi_box .bmi_txt {
+    gap: 8px;
+  }
+  .right_box .right_inner .bmi_box .bmi_txt > div {
+    font-size: 48px;
+  }
+  section:nth-child(2) {
+    position: initial;
+  }
+  .second_inner {
+    margin-top: 552px;
+    flex-direction: column;
+    width: auto;
+  }
+  .second_inner .left_wrap img {
+    width: 100%;
+  }
+  .second_inner .right_wrap .right_txt {
+    margin: 0 auto;
+  }
+  .third_inner {
+    margin-top: 71px;
+    padding: 56px 29px 56px 19px;
+  }
+  .third_inner .infor_box {
+    width: 327px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .fourth_wrap {
+    width: auto;
+  }
+  .fourth_wrap .limitation_box {
+    width: 327px;
+  }
+  .fourth_wrap .limitation_box h2 {
+    font-size: 32px;
+  }
+  .fourth_wrap .grid_box {
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+  }
+  .fourth_wrap .grid_box .sec:nth-child(5) {
+    margin: 0;
+    margin-bottom: 96px;
+  }
 }

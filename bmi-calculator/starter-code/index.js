@@ -36,7 +36,6 @@ function calculateBMI() {
     result.innerHTML = "";
     bmiTxt.innerHTML = "Welcome!"
     bmiTit.innerHTML = "Enter your height and weight and you’ll see your BMI result here"
-    // bmiTxt.style.fontSize = "24px"
     bmiBox.classList.remove("active");
     /* weight 값이 제거될 시 active 클래스 제거 */
   } else {
